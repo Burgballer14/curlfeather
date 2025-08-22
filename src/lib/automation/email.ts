@@ -169,7 +169,9 @@ function generateQuoteEmailHTML(leadData: LeadEmailData): string {
         ${leadData.estimatedCost.toLocaleString('en-US', { style: 'currency', currency: 'USD' })}
       </div>
       <p style="text-align: center; color: #666; font-size: 14px;">
-        Includes materials, labor, and cleanup
+        <strong>Preliminary Estimate</strong><br>
+        Includes materials, labor, and cleanup<br>
+        <em>Final quote subject to on-site consultation</em>
       </p>
     </div>
     
@@ -197,14 +199,16 @@ function generateQuoteEmailHTML(leadData: LeadEmailData): string {
       <li><strong>Get started</strong> on your beautiful new drywall!</li>
     </ol>
     
-    <div class="quote-box">
-      <h4>⚡ Limited Time Offer</h4>
-      <p>This quote is valid for 30 days. Book within the next 7 days and receive:</p>
+    <div class="quote-box" style="background: #fef3c7; border-left: 4px solid #f59e0b;">
+      <h4>📋 Important: Preliminary Estimate</h4>
+      <p><strong>This is a quick estimate based on the information you provided.</strong> The final quote may vary after our free on-site consultation where we can:</p>
       <ul>
-        <li><strong>5% Early Bird Discount</strong></li>
-        <li><strong>Free texture upgrade</strong> (up to $200 value)</li>
-        <li><strong>Priority scheduling</strong></li>
+        <li>Take precise measurements</li>
+        <li>Assess existing conditions</li>
+        <li>Discuss any special requirements</li>
+        <li>Provide a detailed, accurate final quote</li>
       </ul>
+      <p style="font-style: italic; color: #666;">No surprises - we'll discuss any changes with you before starting work.</p>
     </div>
     
     <p><strong>Questions?</strong> Reply to this email or call us directly. We're here to help!</p>
