@@ -39,3 +39,35 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+.vercel
+.env*.local
+
+# Sensitive credential and deployment files
+DEPLOYMENT_CREDENTIALS.md
+*.credentials
+*credentials*
+*.keys
+*-keys.*
+
+# Test files with API keys (if they contain hardcoded credentials)
+test-sendgrid.js
+test-database.js
+test-quote-endpoint.js
+
+# Backup and temporary sensitive files
+*.bak
+*.backup
+*.tmp
+*-backup.*
+*-temp.*
+
+# Database dumps and exports
+*.sql.backup
+*.dump
+*.dmp
+
+# Documentation with sensitive info
+*SECRET*
+*PRIVATE*
+*API_KEYS*
